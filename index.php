@@ -18,22 +18,22 @@
 // echo "Nilai: $nilai" . "\n";
 // echo "Peringkat Huruf: $peringkat";
 
-function getGrade(int $nilai) {
+function getGrade(float | int $nilai) {
     if ($nilai >= 85 && $nilai <= 100) {
-        $getGrade = "A";
+        $grade = "A";
     } elseif ($nilai >= 75 && $nilai <= 84) {
-        $getGrade = "B";
+        $grade = "B";
     } elseif ($nilai >= 60 && $nilai <= 74) {
-        $getGrade = "C";
+        $grade = "C";
     } elseif ($nilai >= 50 && $nilai <= 59) {
-        $getGrade = "D";
+        $grade = "D";
     } elseif ($nilai >= 0 && $nilai <= 49) {
-        $getGrade = "E";
+        $grade = "E";
     } else {
-        $getGrade = "Nilai tidak valid";
+        $grade = "Nilai tidak valid";
     }
 
-    return $getGrade;
+    return $grade;
 }
 
 $peringkat  = "Nilai 100 → " . getGrade(100) . "\n";
