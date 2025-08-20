@@ -41,6 +41,6 @@ $peringkat .= "Nilai 80 → " . getGrade(80) . "\n";
 $peringkat .= "Nilai 70 → " . getGrade(70) . "\n";
 $peringkat .= "Nilai 59 → " . getGrade(59) . "\n";
 $peringkat .= "Nilai 45 → " . getGrade(45) . "\n";
-$peringkat .= "Nilai -80 → " . getGrade(-45) . "\n";
+$peringkat .= "Nilai -80 → " . getGrade(-80) . "\n";
 
 echo $peringkat;
