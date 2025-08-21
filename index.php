@@ -18,7 +18,8 @@
 // echo "Nilai: $nilai" . "\n";
 // echo "Peringkat Huruf: $peringkat";
 
-function getGrade(float | int $nilai) {
+function getGrade(float | int $nilai) : string
+{
     if ($nilai >= 85 && $nilai <= 100) {
         $grade = "A";
     } elseif ($nilai >= 75 && $nilai <= 84) {
@@ -32,7 +33,6 @@ function getGrade(float | int $nilai) {
     } else {
         $grade = "Nilai tidak valid";
     }
-
     return $grade;
 }
 
